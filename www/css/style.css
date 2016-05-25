@@ -1,0 +1,201 @@
+body
+{
+    widht:100vw;
+    margin:0;
+}
+
+/* 野球アプリの全体の領域 */
+.baseball-app-flame
+{
+    width:  100vw;
+    height: 600px;
+    background-color: black;    
+}
+
+/* 時刻、電波が重ならないための領域 */
+.time-wave-area
+{
+    width:  100vw;
+    
+    height: 4vh;
+    
+    background-color: lime;
+}
+
+/* 撮影した動画を格納する領域 */
+.photomovie-region
+{
+    /* style属性で表示を設定 */
+    
+    width:  100vw;
+    height: 250px;
+    
+    /*background-color: blue;*/
+}
+
+/* 撮影した動画を撮影(<video>タグ) */
+.photomovie-region video
+{
+    width: 100vw; 
+    height: 250px;
+    background-color: red;
+}
+
+/* ボタン領域 */
+.button-region
+{
+    width:  100vw;
+    height: 40px;
+    background-color: red;
+}
+
+/* 動画撮影ボタン領域 */
+.button-movieshoot-region
+{
+    width: 33vw;
+    height: 40px;
+    background-color: lime;
+    /* 左寄せ */
+    float: left;
+    /* 真ん中配置 */
+    text-align: center;
+}
+
+/* 動画撮影ボタン */
+.button-movieshoot-region button
+{
+    width: 30vw;
+    height: 40px;
+    color: black;
+    background-color: #FFFFFF;
+}
+
+/* 動画キャプチャボタン領域 */
+.button-moviecapture-region
+{
+    width: 33vw;
+    height: 40px;
+    /* 黄色 */
+    background-color: #FFD700;
+    /* 左寄せ */
+    float: left;
+    /* 真ん中配置 */
+    text-align: center;
+}
+
+/* 動画キャプチャボタン */
+.button-moviecapture-region button
+{
+    width: 30vw;
+    height: 40px;
+    color: black;
+    background-color: #FFFFFF;
+}
+
+
+/* 画像保存ボタン領域 */
+.button-savepicture-region
+{
+    width: 33vw;
+    height: 40px;
+    background-color: black;
+    /* 左寄せ */
+    float: left;
+    /* 真ん中配置 */
+    text-align: center;
+}
+
+/* 画像保存ボタン */
+.button-savepicture-region button
+{
+    width: 30vw;
+    height: 40px;
+    color: black;
+    background-color: #FFFFFF;
+}
+
+
+/* 動画キャプチャ、画像に描画、色選択する領域 */
+.captureImg-draw-colorSelection-region
+{
+    width:  360px;
+    height: 280px;
+    
+    background-color: black;
+}
+
+/*  動画キャプチャ、描画領域 */
+.captureImg-draw-region
+{
+    /*
+    width:  370px;
+    */
+    width: 100vw;
+    height: 250px;
+    background-color: green;
+    
+    position: relative;
+}
+
+
+
+
+/* 
+    キャプチャ領域(canvas id = "canvas-captureImageFirst" src = "" style = "display:none;" class="capture-region1")
+    キャプチャボタンを初回に押したとき
+*/
+.capture-region1
+{ 
+　　/*
+    width:  360px;
+    height: 250px;
+    
+  　width:  250px;
+    height: 250px;
+    */
+    
+    /* ボックスの配置方法 absolute: 絶対位置への配置 親ボックスの左上が基準位置となる */
+    position:absolute;
+    /* display:none; */
+    visibility: hidden;
+
+    /* 背景色・赤 */
+    background-color: red;
+    
+}
+
+
+.canvas-captureImageSecond
+{
+    width:  240px;
+    height: 180px;
+    
+}
+/* 
+    キャプチャ領域(canvas id = "canvas-captureImageSecond" src = "" style = "display:none;" class="capture-region2")
+    キャプチャボタンを押したのが2回目以降
+*/
+.capture-region2
+{ 
+　　
+    /*    
+    width:  360px;
+    height: 250px;
+  　
+  　width:  250px;
+    height: 250px;
+    */
+    
+    /* ボックスの配置方法 absolute: 絶対位置への配置 親ボックスの左上が基準位置となる */
+    /*display:none;*/
+    visibility: hidden;
+    
+    position: absolute;
+    
+    left: 0px;
+    top: 0px;
+    
+    background-color: pink;  
+}
+
+
